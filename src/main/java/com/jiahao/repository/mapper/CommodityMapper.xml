@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jiahao.repository.mapper.CommodityMapper">
+    <select id="selectAll" resultType="Commodity">
+        select Id,`Number`,`Name`,Price,Description,StatusId,CreateAt,LastEditAt,NameSpelling,NewPrice from commodity;
+    </select>
+
+
+</mapper>
